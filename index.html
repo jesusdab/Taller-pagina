@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Artistas Favoritos</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Mis Artistas Favoritos: SZA y Taylor Swift</h1>
+
+
+        <div class="row mb-5">
+            <div class="col-md-6 text-center">
+                <h2>SZA (Solana)</h2>
+                <img src="images/artista1.png" alt="SZA" class="img-fluid imagen-artista">
+                <p class="mt-3">Solana Rowe (nacida el 8 de Noviembre de 1989) es mejor conocida como SZA. El proyecto de esta cantante y compositora estadounidense es significativamente distinto y tras lanzar su EP debut de manera independiente (See.SZA.Run) se notaron las influencias de Rowe (neo soul, alternative R&B y el PBR&B) que la llevaron a trabajar con artistas como Chance the Rapper y Kendrick Lamar. Puedes conocer más sobre su trayectoria en su <a href="https://szactrl.com" target="_blank">página oficial</a>.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <h2>Taylor Swift</h2>
+                <img src="images/artista2.png" alt="Taylor Swift" class="img-fluid imagen-artista">
+                <p class="mt-3">Taylor Alison Swift nació en West Reading, Pensilvania, el 13 de diciembre de 1989. Empezó a los 14 años con la música country y se convirtió en la artista más joven contratada por Sony Music. Su primer álbum es de 2006: Taylor Swift. A partir de ahí empezó a experimentar con ritmos mezclados con el country, el pop, el rock o el indie. Para más información, visita su <a href="https://www.taylorswift.com" target="_blank">página oficial</a>.</p>
+            </div>
+        </div>
+
+
+        <div class="row mb-5">
+            <div class="col-md-12">
+                <h3 class="mb-3">Discografía destacada</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        CTRL - SZA
+                        <a href="https://open.spotify.com/album/6FKP2O0oOvZlDkF0gyTjiJ?si=Mg5uf2xJTFqGzv0zLJQDwg" target="_blank" class="ms-3">
+                            <img src="images/spotify.png" alt="Spotify" width="30" height="30">
+                        </a>
+                        <a href="https://music.apple.com/co/album/ctrl-deluxe/1628387909?l=en-GB" target="_blank">
+                            <img src="images/AppleMusic.png" alt="Apple Music" width="30" height="30">
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        SOS - SZA
+                        <a href="https://open.spotify.com/album/07w0rG5TETcyihsEIZR3qG?si=G2LRTzX1SfOPvSjUNqnyTw" target="_blank" class="ms-3">
+                            <img src="images/spotify.png" alt="Spotify" width="30" height="30">
+                        </a>
+                        <a href="https://music.apple.com/co/album/sos/1657869377?l=en-GB" target="_blank">
+                            <img src="images/AppleMusic.png" alt="Apple Music" width="30" height="30">
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        1989 - Taylor Swift
+                        <a href="https://open.spotify.com/album/1o59UpKw81iHR0HPiSkJR0?si=FremFHMVQ2iGczntFjhaXg" target="_blank" class="ms-3">
+                            <img src="images/spotify.png" alt="Spotify" width="30" height="30">
+                        </a>
+                        <a href="https://music.apple.com/co/album/1989-taylors-version-deluxe/1713845538?l=en-GB" target="_blank">
+                            <img src="images/AppleMusic.png" alt="Apple Music" width="30" height="30">
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        Folklore - Taylor Swift
+                        <a href="https://open.spotify.com/album/1pzvBxYgT6OVwJLtHkrdQK?si=Rj9GAs5BQ4GmlhNevieYLg" target="_blank" class="ms-3">
+                            <img src="images/spotify.png" alt="Spotify" width="30" height="30">
+                        </a>
+                        <a href="https://music.apple.com/co/album/folklore-deluxe-version/1528112358?l=en-GBe" target="_blank">
+                            <img src="images/AppleMusic.png" alt="Apple Music" width="30" height="30">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="mb-3">Suscríbete para recibir más información</h3>
+                <div id="subscriptionMessage" class="alert alert-success d-none" role="alert">
+                    Suscripción hecha con éxito, Bienvenido <span id="userName"></span>!
+                </div>
+                <form id="subscriptionForm">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+                </form>
+
+
+                <hr class="mt-5">
+
+
+                <footer class="text-center mt-3">
+                    <p>&copy; 2024 Mis Artistas Favoritos. Hecho por Jesus David Alvernia Barona.</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('subscriptionForm').addEventListener('submit', function(e) {
+            e.preventDefault(); 
+            const name = document.getElementById('nombre').value;
+            document.getElementById('userName').innerText = name; 
+            document.getElementById('subscriptionMessage').classList.remove('d-none'); 
+            document.getElementById('subscriptionForm').reset(); 
+        });
+    </script>
+</body>
+</html>
